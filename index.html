@@ -5,25 +5,42 @@
 <title>What I Can Eat</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script> <!-- nothing there yet -->
-
 </head>
 
 <body>
   <div id="wrapper">
     <img src="img/logo.jpg" alt="heart of foods">
     <h1>What I Can Eat</h1>
-    <h3>Please indicate your dietary preferences below.</h3>
+    <h3>Please indicate your dietary preferences.</h3>
 
-    <form name="diet" action="recipes.html" method="get">
-      <input type="checkbox" value="Vegetarian"> Vegetarian<br>
-      <input type="checkbox" value="Vegan"> Vegan<br>
-      <input type="checkbox" value="Gluten-free"> Gluten-free<br>
-      <input type="checkbox" value="Lactose Intolerant"> Lactose Intolerant<br>
-      <input type="checkbox" value="Acid Sensitivity"> Acid Sensitivity<br><br>
-    <input type="Submit" value="Submit">
+    <form name="preferences">
+    <!-- action="recipes.html" method="get"> -->
+      <input type="checkbox" class="preference" value="Vegetarian"> Vegetarian<br>
+      <input type="checkbox" class="preference" value="Vegan"> Vegan<br>
+      <input type="checkbox" class="preference" value="Gluten-free"> Gluten-free<br>
+      <input type="checkbox" class="preference" value="Lactose Intolerant"> Lactose Intolerant<br>
+      <input type="checkbox" class="preference" value="Acid Sensitivity"> Acid Sensitivity<br><br>
     </form>
-  </div>
-</body>
+      <button id="submitButton">Submit</button>
+    <br>
 
+  <div id="recipes">
+    <h1>Recipes</h1>
+      <p class="recipe" id="Vegetarian">Recipe 1: A vegetarian recipe</p>
+      <p class="recipe" id="Vegan">Recipe 2: a vegan recipe</p>
+      <p class="recipe" id="Gluten-free">Recipe 3: A gluten-free recipe</p>
+      <p class="recipe" id="Lactose Intolerant">Recipe 4: A lactose intolerant recipe</p>
+      <p class="recipe" id="Acid Sensitivity">Recipe 5: An acid-sensitive recipe</p>
+      <p class="recipe">Recipe 6: An omnivore recipe</p>
+      <p class="recipe" id="Vegetarian" id="Gluten-free">Recipe 7: A vegetarian and gluten-free recipe</p>
+      <p class="recipe" id="Lactose Intolerant" id="Gluten-free">Recipe 8: A lactose-free and gluten-free recipe</p>
+      <p class="recipe" id="Vegan" id="Acid Sensitivity">Recipe 9: A vegan and non-acidic recipe</p>
+      <p class="recipe" id="Vegetarian" id="Vegan" id="Gluten-free" id="Lactose Intolerant" id="Acid Sensitivity">Recipe 10: A vegan, gluten-free, lactose-free, low-acid recipe -- wow!</p>
+    <br><br> <!-- sheer laziness -->
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
 </html>
